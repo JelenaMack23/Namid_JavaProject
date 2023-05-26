@@ -7,7 +7,6 @@ public class Odd_Even_Numbers {
             System.out.println("Number is Even");
         } else {
             System.out.println("Number is Odd");
-
         }
     }
 

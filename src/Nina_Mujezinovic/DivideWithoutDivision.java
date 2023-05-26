@@ -11,7 +11,6 @@ public class DivideWithoutDivision {
         if (b == 0)
             throw new ArithmeticException("Yon can not divide by 0");
 
-
         while (a >= b) {
             a = a - b;// a=30 b= 4 then a = 30-4 ; a = 26
             res++;
@@ -23,7 +22,6 @@ public class DivideWithoutDivision {
                 res = -res;
 
             return res;
-
     }
 
     public static void main(String[] args) {
