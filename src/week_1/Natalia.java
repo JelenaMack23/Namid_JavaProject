@@ -5,6 +5,9 @@ public class Natalia {
     public static void main(String[] args) {
 
         System.out.println(divideWithoutOperator(58,2));
+        oddOrEven(60);
+        oddOrEven(55);
+
 
     }
 
@@ -30,6 +33,19 @@ public class Natalia {
 
 
     }
+
+    public static void oddOrEven (int num){
+
+        if (num<0){
+            System.out.println("cannot be negative");
+        }
+        if (num%2==0){
+            System.out.println(num+ " is even number");
+        }else {
+            System.out.println(num+ " is odd number");
+        }
+    }
+
 
 
 }
