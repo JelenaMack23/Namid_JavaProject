@@ -20,7 +20,6 @@ public class Natalia {
         num2 = num1 - num2; //num2 = 35-10 (25)
         num1 = num1 - num2; //num1 = 35-25 (10)
 
-
         System.out.println(num1 + ", " + num2);
     }
 
