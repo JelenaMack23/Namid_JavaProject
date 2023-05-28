@@ -5,13 +5,7 @@ public class Natalia {
     public static void main(String[] args) {
 
 
-        //swap numbers
-
-        int num1 = 25;
-        int num2 = 47;
-
-
-
+        swapTwoNumbers(25,79);
         divisibleBy3_5_15();
         consecutiveNumbers(24);
 
@@ -31,6 +25,17 @@ public class Natalia {
     //    Divisible By 15 15 30 45 60 75 90
     //    Divisible By 5 5 10 20 25 35 40 50 55 65 70 80 85 95 100
     //    Divisible By 3 .....
+
+    public static void swapTwoNumbers(int num1, int num2){
+        //swap numbers
+
+        num1 = num2 + num1; //num1 = 10+25 (35)
+        num2 = num1 - num2; //num2 = 35-10 (25)
+        num1 = num1 - num2; //num1 = 35-25 (10)
+
+        System.out.println(num1 + ", " + num2);
+    }
+
 
     public static void divisibleBy3_5_15() {
 
