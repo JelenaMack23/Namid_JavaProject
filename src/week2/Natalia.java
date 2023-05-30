@@ -5,26 +5,13 @@ public class Natalia {
     public static void main(String[] args) {
 
 
-        swapTwoNumbers(25,79);
+        swapTwoNumbers(25,10);
         divisibleBy3_5_15();
         consecutiveNumbers(24);
 
     }
 
 
-    // 1. swap two variable' values without using a third variable
-
-
-    //2. write a program that can print the numbers between 1~100 that can be divisible by 3,5 and 15.
-    //   if the number can be divisible by 3,5 and 15 then it should be displayed in DivisibleBy15 section
-    //   if the number can be divisible by 3 but cannot be divisible by 15, then it should ONLY be
-    //   displayed in DivisibleBy3 section
-    //   if the number can be divisible by 5 but cannot be divisible by 15, then it should ONLY be
-    //   displayed in DivisibleBy5 section
-    // ex:
-    //    Divisible By 15 15 30 45 60 75 90
-    //    Divisible By 5 5 10 20 25 35 40 50 55 65 70 80 85 95 100
-    //    Divisible By 3 .....
 
     public static void swapTwoNumbers(int num1, int num2){
         //swap numbers
