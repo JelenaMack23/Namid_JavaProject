@@ -42,7 +42,7 @@ public class Dmitrii {
         return result;
     }
 
-    public static String FINRA (int a){
+    public static String Finra (int a){
 
         String res2="";
         for (int i = 1; i <= a; i++) {
@@ -78,7 +78,7 @@ public class Dmitrii {
         System.out.println(OddEven(5));
         System.out.println(OddEven(6));
 
-        System.out.println(FINRA(30));
+        System.out.println(Finra(30));
 
 
     }
