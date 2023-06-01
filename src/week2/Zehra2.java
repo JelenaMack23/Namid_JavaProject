@@ -80,5 +80,33 @@ public class Zehra2 {
         System.out.println("Divisible By 3: " + divisibleBy3);
         input.close();
 
+        System.out.println("--------------------");
+
+        /*
+       Write a function that, given a positive integer N, prints the consecutive numbers from 1 to N, each on sperate line.However, any number divisible by 2,3 or 5 should be replaced by the world Codility,Test or Coders respectively.If numbers is divisible by more than one of the numbers:2,3 or5, it should be replaced by a concatenation of the respective words Codility. Test and Coders in this given order. For example, numbers divisible by both 2 and 3 should be replacee by CodlityTest and numbers divisible by all three numbers:2,3 and, should be replaced by CodilityTestCoders.
+
+
+         */
+        int N = 35;
+        for (int i = 1; i <= N; i++) {
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                System.out.println("CodilityTestCoders");
+            } else if (i % 2 == 0 && i % 3 == 0) {
+                System.out.println("CodilityTest");
+            } else if (i % 2 == 0 && i % 5 == 0) {
+                System.out.println("CodilityCoders");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("TestCoders");
+            } else if (i % 2 == 0) {
+                System.out.println("Codility");
+            } else if (i % 3 == 0) {
+                System.out.println("Test");
+            } else if (i % 5 == 0) {
+                System.out.println("Coders");
+            } else {
+                System.out.println(i);
+            }
+        }
     }
+
 }
