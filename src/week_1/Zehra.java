@@ -1,6 +1,6 @@
 package week_1;
 
-public class Jelena {
+public class Zehra {
 
     public static void main(String[] args) {
 
@@ -58,13 +58,13 @@ public class Jelena {
     public static void printFINRA() {
         for (int i = 1; i <= 30; i++) { // iterate between 1 and 30
             if (i % 3 == 0 && i % 5 == 0) { // checks if number is divisible by 3 and 5
-                System.out.println( i + " FINRA");
+                System.out.println(i + " FINRA");
             } else if (i % 3 == 0) { // checks if number is divisible by 3
-                System.out.println( i + " FIN");
+                System.out.println(i + " FIN");
             } else if (i % 5 == 0) { // checks if number is divisible by 5
-                System.out.println( i + " RA");
+                System.out.println(i + " RA");
             } else {
-                System.out.println(i+" ");
+                System.out.println(i + " ");
             }
 
         }
@@ -72,10 +72,4 @@ public class Jelena {
     }
 
 
-
-
-
 }
-
-
-
