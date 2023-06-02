@@ -10,12 +10,28 @@ public class Suraye {
         System.out.println(checkEvenOrOdd(num1));
         System.out.println(checkEvenOrOdd(num2));
 
-        System.out.println(DivideWithoutOperator(24,7));
+        System.out.println("--------------------------------");
+
+        System.out.println(DivideWithoutOperator(24, 7));
+        System.out.println(DivideWithoutOperator(24.5, 7.5));
+        System.out.println(DivideWithoutOperator(-24, 7));
+        System.out.println(DivideWithoutOperator(-24, -7));
+
+        System.out.println("--------------------------------");
+
 
         printFINRA();
 
     }
 
+    public static String checkEvenOrOdd(int number) {
+        if (number % 2 == 0) {
+            return "Even";
+        } else {
+            return "Odd";
+        }
+    }
+/*
     public static String DivideWithoutOperator (int num1, int num2){
         int result = 0;
 
@@ -25,6 +41,32 @@ public class Suraye {
         }
         return result + " remainder " + num1;
     }
+
+ */
+
+    public static String DivideWithoutOperator(double num1, double num2) {
+        double result = 0;
+
+        // Determine the sign of the quotient
+        boolean isNegative = (num1 < 0 && num2 > 0) || (num1 > 0 && num2 < 0);
+
+        // Convert both numbers to their absolute values to ensure division performed with positive numbers
+        num1 = Math.abs(num1);
+        num2 = Math.abs(num2);
+
+        while (num1 - num2 >= 0) { // while loop checks the difference between num1 and num2 is more than or equal to 0.
+            num1 -= num2; // subtract num2 from num1
+            result++; // increment variable by 1 in each iteration
+        }
+
+        // Adjust the sign of the quotient
+        if (isNegative) {
+            result =- result; // if it is negative, variable is negated by multiplying it by -1
+        }
+
+        return result + " remainder " + num1;
+    }
+
 
     public static void printFINRA() {
         for (int i = 1; i <= 30; i++) { // iterate between 1 and 30
@@ -40,13 +82,7 @@ public class Suraye {
         }
     }
 
-    public static String checkEvenOrOdd(int number) {
-        if (number % 2 == 0) {
-            return "Even";
-        } else {
-            return "Odd";
-        }
-    }
+
 
 
 
