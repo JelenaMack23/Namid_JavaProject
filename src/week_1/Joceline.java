@@ -2,7 +2,7 @@ package week_1;
 
 import java.text.DecimalFormat;
 
-public class Dmitrii {
+public class Joceline {
     public static double DivideWithoutDivision(int a, int b){
 
         double res=0;
@@ -42,7 +42,7 @@ public class Dmitrii {
         return result;
     }
 
-    public static String Finra (int a){
+    public static String FINRA (int a){
 
         String res2="";
         for (int i = 1; i <= a; i++) {
@@ -59,10 +59,6 @@ public class Dmitrii {
         }
         return res2;
     }
-
-
-
-
     public static void main(String[] args) {
         DecimalFormat df=new DecimalFormat("0.0");
 
@@ -78,8 +74,13 @@ public class Dmitrii {
         System.out.println(OddEven(5));
         System.out.println(OddEven(6));
 
-        System.out.println(Finra(30));
+        System.out.println(FINRA(30));
 
 
     }
 }
+
+
+
+
+
