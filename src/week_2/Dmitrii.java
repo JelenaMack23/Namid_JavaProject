@@ -67,6 +67,6 @@ public class Dmitrii {
         DivisibleBy3_5_15(1,100);
 
         System.out.println("--------------------Task #3-------------------------------");
-        CodilityTestCoders(24);
+        CodilityTestCoders(26);
     }
 }
