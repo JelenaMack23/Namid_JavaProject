@@ -1,16 +1,33 @@
 package week_2;
 
-public class Dmitrii {
+public class Piri2 {
+    public static void Swap(int a, int b) {
 
-    public static void Swap(int a, int b){
-        a+=b;
-        b=a-b;
-        a-=b;
-        System.out.println("a = " + (a)+", b = " + (b));
+        System.out.println("Before swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Swapping the values without a third variable
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
     }
 
-    public static void DivisibleBy3_5_15(int a, int b){
+/*
+In this approach, the addition and subtraction operations are used to swap the values. The logic is as follows:
 
+Add a and b, and assign the result back to a. Now, a contains the sum of the original values of a and b.
+Subtract the original value of b (before swapping) from a, and assign the result back to b. This assigns the original value of a to b.
+Finally, subtract the original value of a (before swapping) from b, and assign the result back to a. This assigns the original value of b to a.
+After these steps, the values of a and b are swapped without using a third variable.
+
+ */
+
+    public static void DivisibleNumbers(int a, int b) {
         String d15="",d3="", d5="";
 
         for (int i = a; i <=b ; i++) {
@@ -25,7 +42,10 @@ public class Dmitrii {
             }
         }
         System.out.println("In range between "+a+" and "+b+"\nNumbers divisible by 15: "+d15.substring(0,d15.length()-2)+"\nNumbers divisible by  5: "+d5.substring(0,d5.length()-2)+"\nNumbers divisible by  3: "+d3.substring(0,d3.length()-2));
+
+
     }
+
 
     public static void CodilityTestCoders(int n){
         String res="";
@@ -54,19 +74,31 @@ public class Dmitrii {
     }
 
     public static void main(String[] args) {
-        System.out.println("--------------------Task #1-------------------------------");
-        Swap(5,6);
-        Swap(-5,-6);
-        Swap(5,-6);
-        Swap(-5,6);
-        Swap(0,-6);
-        Swap(-5,0);
+        Swap(10,20);
+        Swap(6,8);
+        Swap(-10,20);
+        Swap(8,6);
+        System.out.println("----------------");
 
-        System.out.println("--------------------Task #2-------------------------------");
 
-        DivisibleBy3_5_15(1,100);
+        DivisibleNumbers(1, 100);
 
-        System.out.println("--------------------Task #3-------------------------------");
-        CodilityTestCoders(26);
+        System.out.println("--------------");
+
+        CodilityTestCoders(24);
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

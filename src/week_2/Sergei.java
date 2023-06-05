@@ -1,6 +1,7 @@
 package week_2;
 
-public class Dmitrii {
+
+public class Sergei {
 
     public static void Swap(int a, int b){
         a+=b;
@@ -67,6 +68,7 @@ public class Dmitrii {
         DivisibleBy3_5_15(1,100);
 
         System.out.println("--------------------Task #3-------------------------------");
-        CodilityTestCoders(26);
+        CodilityTestCoders(24);
     }
 }
+

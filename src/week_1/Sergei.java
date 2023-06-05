@@ -1,10 +1,9 @@
-
 package week_1;
+
 
 import java.text.DecimalFormat;
 
-public class Nina {
-
+public class Sergei {
     public static double DivideWithoutDivision(int a, int b){
 
         double res=0;
@@ -66,7 +65,7 @@ public class Nina {
 
 
     public static void main(String[] args) {
-        DecimalFormat df= new DecimalFormat("0.0");
+        DecimalFormat df=new DecimalFormat("0.0");
 
         System.out.println(df.format(DivideWithoutDivision(9,3)));
         System.out.println(df.format(DivideWithoutDivision(10,3)));
@@ -85,3 +84,4 @@ public class Nina {
 
     }
 }
+
