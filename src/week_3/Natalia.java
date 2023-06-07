@@ -13,7 +13,10 @@ public class Natalia {
         primeNumber(82);
         primeNumber(77);
         primeNumber(35);
-        primeNumber(-5);
+
+
+        System.out.println("reverseNegativeNumber(-25) = " + reverseNegativeNumber(-25));
+        System.out.println("reverseNegativeNumber(-84) = " + reverseNegativeNumber(-84));
     }
 
 
@@ -49,6 +52,31 @@ public class Natalia {
     //Write a return method that can reverse negative number and return it as int
 
     //ex: num= -56     result = -65
+
+
+    public static int reverseNegativeNumber(int num){
+
+        int reverse = 0;
+        int remainder = 0;
+
+        num = num * -1;
+
+        do{
+            remainder = num % 10;
+            reverse = reverse * 10 + remainder;
+            num = num / 10;
+
+        }while(num > 0);
+
+        return reverse * -1;
+
+
+
+
+
+
+
+    }
 
 
 
