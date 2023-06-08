@@ -40,6 +40,5 @@ public class Nina {
         System.out.print("Divisible By 3: " + divisibleBy_3 + "\n");
         System.out.print("Divisible By 5: " + divisibleBy_5 + "\n");
 
-
     }
 }
