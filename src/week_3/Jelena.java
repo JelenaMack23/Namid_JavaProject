@@ -1,5 +1,7 @@
 package week_3;
 
+import java.util.prefs.PreferenceChangeEvent;
+
 public class Jelena {
 
     public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class Jelena {
         primeNum(16);
         primeNum(21);
 
+        System.out.println(reverseNegative(-15));
+        System.out.println(reverseNegative(-75));
+
     }
 
     public static void primeNum(int a) {
@@ -19,5 +24,32 @@ public class Jelena {
         } else {
             System.out.println(a + " is a prime number");
         }
+    }
+
+    public static int reverseNegative(int number) {
+        /*2. Numbers -- Reverse negative number
+Write a return method that can reverse
+negative number and return it as int
+
+ex -56       = -65
+ */
+        int n = number;
+        String convert = "";
+        String reverse = "-";
+        if (number < 0) {
+            convert = String.valueOf(n);
+
+        }
+
+        for (int i = convert.length() - 1; i > 0; i--) {
+
+            reverse += convert.charAt(i);
+
+        }
+
+        n = Integer.parseInt(reverse);
+
+        return n;
+
     }
 }
