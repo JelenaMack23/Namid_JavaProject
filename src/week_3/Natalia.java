@@ -13,7 +13,7 @@ public class Natalia {
         primeNumber(82);
         primeNumber(77);
         primeNumber(35);
-        primeNumber(1);
+
 
 
         System.out.println("reverseNegativeNumber(-25) = " + reverseNegativeNumber(-25));
@@ -31,9 +31,10 @@ public class Natalia {
 
         if (num==1){
             System.out.println(num + " is composite number");
+            System.exit(0);
         }
 
-        if (num > 1) {
+        if (num > 2) {
 
             for (int i = 1; i <= num; i++) {
                 if(num%i==0){
