@@ -1,8 +1,8 @@
 package week_3;
 
-public class Piri3 {
+public class Piri_week_3 {
     public static void main(String[] args) {
-        System.out.println("Task 1 " );
+        System.out.println("-Task 1 -" );
 
         PrimeNumber(1);
         PrimeNumber(2);
@@ -18,7 +18,7 @@ public class Piri3 {
         PrimeNumber(22);
         PrimeNumber(15);
 
-        System.out.println("-Task 2 . Solution 1 -" );
+        System.out.println("-----------Task 2 . Solution 1 ----------------------" );
 
         System.out.println(Reverse(-12546));
         System.out.println(Reverse(12546));
@@ -94,7 +94,4 @@ public class Piri3 {
 
         return reverse;
     }
-
 }
-
-
