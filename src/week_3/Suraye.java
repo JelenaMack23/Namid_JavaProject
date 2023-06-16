@@ -14,7 +14,6 @@ public class Suraye {
             }
         }
 
-        System.out.println("-----------------------------------");
 
         //2. Numbers -- Reverse negative number
         //Write a return method that can reverse negative number and return it as int
