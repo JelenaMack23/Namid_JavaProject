@@ -26,7 +26,7 @@ public class Suraye {
 
         //Frequency of Characters
 
-        String str2 = "aaabbbcccdddeeefffggghhh";
+        String str2 = "AAaaaBBbbbCCcccDDdddEEeeeFFfffGGgggHHhhh";
         String frequency = frequencyOfChars(str2);
         System.out.println(frequency);
 
