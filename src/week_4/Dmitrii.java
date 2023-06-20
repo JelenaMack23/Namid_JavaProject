@@ -5,7 +5,7 @@ public class Dmitrii {
   public static void main(String[]args) {
 
       System.out.println("------------------------TASK #1----------------------------------------------");
-      System.out.println("FrequencyOfCharacters(\"AAABBCDD\") = " + FrequencyOfCharacters("AAABBCDD"));
+      System.out.println("FrequencyOfCharacters(\"AAABBCDD\") = " + FrequencyOfCharacters("AaaBBCDD"));
 
       System.out.println("------------------------TASK #2----------------------------------------------");
       System.out.println("SameLetters(\"abcde\", \"cabed\"), expected true = " + SameLetters("abcde", "abcde"));
