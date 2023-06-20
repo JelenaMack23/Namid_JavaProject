@@ -1,4 +1,19 @@
 package week_5;
 
 public class Natalia {
+
+
+
+
 }
+/*
+String -- Find the unique
+Write a return method that can find the unique characters from the String
+Ex: unique("AAABBBCCCDEF") ==> "DEF";
+
+
+
+String -- Reverse
+Write a return method that can reverse String
+Ex: Reverse("ABCD"); ==> DCBA
+ */
