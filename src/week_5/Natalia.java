@@ -1,10 +1,6 @@
 package week_5;
 
 public class Natalia {
-
-
-
-
 }
 /*
 String -- Find the unique
