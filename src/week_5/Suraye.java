@@ -4,7 +4,7 @@ public class Suraye {
 
     public static void main(String[] args) {
 
-        //String -- Find the unique
+        //String -- Reverse
         String str = "Suraye";
         String reverse = "";
 
@@ -18,7 +18,7 @@ public class Suraye {
 
         System.out.println("----------------------------");
 
-        //String -- Reverse
+        //String -- Find the unique
         String str2 = "AAHaabcccd112334";
         String unique = "";  // initialize empty string
 
