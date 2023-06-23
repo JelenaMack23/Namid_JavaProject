@@ -5,7 +5,7 @@ public class Dmitrii {
   public static void main(String[]args) {
 
       System.out.println("------------------------TASK #1----------------------------------------------");
-      System.out.println("FrequencyOfCharacters(\"AAABBCDD\") = " + FrequencyOfCharacters("AAABBCDD"));
+      System.out.println("FrequencyOfCharacters(\"AAABBCDD\") = " + FrequencyOfCharacters("AaaBBCDD"));
 
       System.out.println("------------------------TASK #2----------------------------------------------");
       System.out.println("SameLetters(\"abcde\", \"cabed\"), expected true = " + SameLetters("abcde", "abcde"));
@@ -44,7 +44,7 @@ public class Dmitrii {
       int count=0; // count how many element str2 contains str1
       for (int i = 0; i < str1.length(); i++) {
            if (str2.contains(str1.charAt(i)+"")){  // check if str2 contains i element str1 and opposite
-           count++; // if contains inrease count
+           count++; // if contains inсrease count
           }
       }
       if (count==str1.length()){  // if equal it means count increased every loop iteration, what means str2 contains from characters str1

@@ -14,7 +14,7 @@ public class Dmitrii {
         PrimeNumber(7);
         PrimeNumber(8);
         PrimeNumber(9);
-        PrimeNumber(10);
+        PrimeNumber(13);
         PrimeNumber(11);
         PrimeNumber(22);
         PrimeNumber(15);
@@ -27,7 +27,7 @@ public class Dmitrii {
 
         System.out.println("-----------Task 2 . Solution 1 ----------------------" );
 
-        System.out.println(Reverse2(-12546));
+        System.out.println(Reverse2(-100));
         System.out.println(Reverse2(12546));
         System.out.println(Reverse2(0));
 
@@ -70,6 +70,7 @@ public class Dmitrii {
     public static int Reverse2(int a){
 
         int b=Math.abs(a);  // absolut value of a
+
         int count=1;
 
         //  using loop for counting how many numbers "int a"  has
@@ -82,7 +83,7 @@ public class Dmitrii {
             }
         }
 
-        int reverse=0;
+        int reverse=0;  //1234
 
          for (int i = count-1; i >= 0; i--) { // using for reverse "int a"
 
