@@ -8,7 +8,6 @@ public class Natalia {
     public static void main(String[] args) {
 
         System.out.println(reverseString("hsdjTDSA56789"));
-        ;
         System.out.println(reverseString("Natalia"));
         System.out.println(reverseString("1234567890"));
 
@@ -29,7 +28,7 @@ Ex: unique("AAABBBCCCDEF") ==> "DEF";
         String result = "";
 
         for (int i = 0; i < str.length(); i++) {
-            char each = str.charAt(i);
+            char each = str.charAt(i); //
 
             if (str.indexOf(each) == str.lastIndexOf(each)){
                 result += each;
