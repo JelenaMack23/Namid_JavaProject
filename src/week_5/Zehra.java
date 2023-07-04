@@ -53,7 +53,6 @@ String reverse = "";
         }
         return reverse;
         //After the loop completes, the reverse string contains the reversed version of the input string, and it is returned from the method.
-    }
 }
 
 
