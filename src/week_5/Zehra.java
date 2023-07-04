@@ -15,7 +15,7 @@ public class Zehra {
 
 
         //write a return  method that can reverse String
-        String str2="apple";
+        String str2 = "apple";
         System.out.println("reverseString(str) = " + reverseString(str2));
     }
 
@@ -41,22 +41,21 @@ public class Zehra {
     //     */
 
 
+    public static String reverseString(String str) {
 
-    public static String reverseString(String str){
-
-String reverse = "";
+        String reverse = "";
 //The reverseString method takes a string (str) as input and returns the reversed version of the string.
 
-        for(int i=str.length()-1; i>=0; i--){
-            reverse +=str.charAt(i);
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse += str.charAt(i);
             //The method uses a for loop to iterate over the characters of the input string in reverse order. It starts from the last character (index str.length() - 1) and continues until the first character (index 0).
         }
         return reverse;
         //After the loop completes, the reverse string contains the reversed version of the input string, and it is returned from the method.
+    }
+
+
 }
-
-
-
 
 
 
