@@ -37,6 +37,7 @@ public class Suraye {
         System.out.println("Sum of digits: " + digitSum);
     }
 
+    // we use 'break' after each loop to exit the loop early after finding a specific condition met in each loop
     public static boolean isPasswordValid(String password) {
         // Check if password has at least 6 characters and does not contain space
         if (password.length() < 6 || password.contains(" ")) {
