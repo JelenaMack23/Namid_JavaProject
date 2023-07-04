@@ -7,7 +7,7 @@ public class Suraye {
 
         // Test the password validation method
         String password1 = "Suraye3!"; // valid password
-        String password2 = "suraye"; // invalid password (less than 6 characters)
+        String password2 = "suray"; // invalid password (less than 6 characters)
         String password3 = "Suraye"; // invalid password (no special character or digit)
 
         System.out.println(isPasswordValid(password1));
