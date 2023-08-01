@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Piri9 {
 
-    // Method to concatenate two arrays
+    // Method to concatenate two arrays.
         public static int[] concatArrays(int[] arr1, int[] arr2) {
             int[] result = new int[arr1.length + arr2.length];
             System.arraycopy(arr1, 0, result, 0, arr1.length);
