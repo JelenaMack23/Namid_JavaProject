@@ -27,6 +27,66 @@ public class Dmitrii {
         arr.addAll(Arrays.asList(85,11,24,66,48,71,57, 5,23, 44));
         Dmitrii.removeInt(arr,50);
 
+       /* Longest Repetitive Substring -- Real Interview Task
+
+
+        - Write a program if some substring K that can be repeated N>1 times to produce the input string exactly as it appears.
+        - Your program should return longest substring K, and
+        - if there is none it should be return "There is no repetitive substring"
+
+        For Example
+        str ="abcababcababcab"             output should be abcab
+        str ="abcdefabcdef"                output should be abcdef
+
+        str ="abcdefabcdefabcdefabcdef"     output should be abcdefabcdef
+        str ="abcdefxabcdef"           output should be "There is no repetitive substring"
+        */
+
+        String str ="abcababcababcab";
+
+
+
+        boolean isSubstring=true;
+        String subStr="";
+        for (int i = 1; i <= str.length()/2; i++) { // i=2
+            subStr=str.substring(0,i);     // ab
+
+            for (int j = i; j < str.length()-i; j+=i) { // начинаем с i так как проверяем оставшийся String,
+                // str.length()-i так как надо уменьшать каждый раз String иначе Index out of bound
+                // j+=i чтоб не упустить случаи когда substring начинается с определенной позиции которую мы пропустили бы если j++.
+                if (!str.substring(j,j+i).equals(subStr)){
+                    isSubstring=false;
+                    break;
+                }
+
+            }
+
+        }
+        if (isSubstring) {
+            System.out.println("K = " + subStr);
+        }else {
+            System.out.println("There is no repetitive substring");
+        }
+
+
+
+/*
+for (int len = 1; len <= n / 2; len++) {
+            String substring = input.substring(0, len);
+            boolean isRepetitive = true;
+
+            for (int i = len; i <= n - len; i += len) {
+                if (!input.substring(i, i + len).equals(substring)) {
+                    isRepetitive = false;
+                    break;
+                }
+            }
+ */
+
+
+
+
+
 
     }
 
