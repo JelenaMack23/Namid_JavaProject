@@ -1,6 +1,7 @@
 package week_4;
 
-public class Jelena {
+public class
+Jelena {
 
     public static void main(String[]args) {
 
